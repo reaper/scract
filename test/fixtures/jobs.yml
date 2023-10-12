@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  script: MyText
+  schedule: MyString
+  scheduled_with: 1
+
+two:
+  title: MyString
+  script: MyText
+  schedule: MyString
+  scheduled_with: 1

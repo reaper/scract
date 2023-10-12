@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:9898"
+    environment:
+      - SECRET_KEY_BASE=4b74fc8552cee2be5c25a983bc7fd78363de3564b8211953a4065b8cc9f7641e4b02bbf0b05e8c3a863a9ea25b70044776ac73dce099b400dda46c3aad6ce478
+    volumes:
+      - app_storage:/rails/storage
+
+volumes:
+  app_storage:

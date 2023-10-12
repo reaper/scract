@@ -1,0 +1,5 @@
+= simple_form_for @campaign, html: { novalidate: true } do |f|
+  = f.input :title
+  = f.input :scheduled_with, collection: Campaign.scheduled_withs.keys, include_blank: false
+  = f.input :schedule
+  = f.button :submit

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @campaign.title
+%p
+  %b Schedule:
+  = @campaign.schedule
+%p
+  %b Scheduled with:
+  = @campaign.scheduled_with
+
+= link_to 'Edit', edit_campaign_path(@campaign)
+\|
+= link_to 'Back', campaigns_path
