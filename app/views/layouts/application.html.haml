@@ -9,6 +9,9 @@
     = stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload"
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_importmap_tags
+
   %body
-    %main.container.mx-auto.mt-28.px-5.flex
+    = render "shared/navigation_bar"
+
+    %main.container.mt-12.flex.mx-auto.max-w-7xl.px-2.sm:px-4.lg:px-8
       = yield
