@@ -1,2 +1,27 @@
-%h1 Jobs#index
-%p Find me in app/views/jobs/index.html.haml
+%h1 Listing jobs
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Script
+      %th Schedule
+      %th Scheduled with
+      %th
+      %th
+      %th
+
+  %tbody
+    - @jobs.each do |job|
+      %tr
+        %td= job.title
+        %td= job.script
+        %td= job.schedule
+        %td= job.scheduled_with
+        %td= link_to 'Show', job
+        %td= link_to 'Edit', edit_job_path(job)
+        %td= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Job', new_job_path

@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "jobs#index"
 
-  resources :jobs, only: [:index]
+  resources :jobs
 end

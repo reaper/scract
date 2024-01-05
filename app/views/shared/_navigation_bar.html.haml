@@ -3,8 +3,9 @@
     .relative.flex.h-16.items-center.justify-between
       .flex.items-center.px-2.lg:px-0
         .flex-shrink-0
-          = link_to root_path do
-            .text-white.font-mono SCRACT
+          = link_to root_path, class: "flex flex-row" do
+            = image_tag "scract-logo.png", class: "block h-10 w-auto"
+            .text-white.font-mono.flex.items-center SCRACT
 
         .hidden.lg:ml-6.lg:block
           .flex.space-x-4
